@@ -23,7 +23,6 @@ struct UISliderViewRepresentation: UIViewRepresentable {
             action: #selector(Coordinator.sliderChanged),
             for: .valueChanged
         )
-        
         return slider
     }
     

@@ -11,10 +11,15 @@ struct ContentView: View {
     
     @State private var targetValue = Int.random(in: 0...100)
     @State private var currentValue = Float.random(in: 0...100)
+    @State private var isAlertPresented = false
     
     var body: some View {
         VStack(spacing: 30) {
-            Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
+            HStack() {
+                Text("Подвиньте слайдер ближе к:")
+                Text(targetValue.formatted())
+                    .frame(width: 30)
+            }
             HStack {
                 Text("O")
                 UISliderViewRepresentation(
@@ -23,8 +28,14 @@ struct ContentView: View {
                 )
                 Text("100")
             }
-            Button("Проверь, меня") {
+            
+            Button("Проверь меня") {
+                isAlertPresented.toggle()
             }
+            .alert("Твой результат", isPresented: $isAlertPresented, actions: {}) {
+                Text(computeScore().formatted())
+            }
+            
             Button("Начать заново") {
                 targetValue = Int.random(in: 0...100)
                 currentValue = Float.random(in: 0...100)
