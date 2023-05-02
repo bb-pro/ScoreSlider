@@ -46,7 +46,7 @@ extension UISliderViewRepresentation {
         }
         
         @objc func sliderChanged(_ sender: UISlider) {
-            sliderValue = Float(sender.value)
+            sliderValue = sender.value
         }
     }
 }
