@@ -28,8 +28,8 @@ struct UISliderViewRepresentation: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UISlider, context: Context) {
-        uiView.value = sliderValue
         uiView.thumbTintColor = uiView.thumbTintColor?.withAlphaComponent(alpha / 100)
+        uiView.setValue(sliderValue, animated: true)
     }
     func makeCoordinator() -> Coordinator {
         Coordinator(value: $sliderValue)
