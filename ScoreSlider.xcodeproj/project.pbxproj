@@ -11,6 +11,7 @@
 		8055E8BA2A00F91900781C66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055E8B92A00F91900781C66 /* ContentView.swift */; };
 		8055E8BC2A00F91E00781C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8055E8BB2A00F91E00781C66 /* Assets.xcassets */; };
 		8055E8BF2A00F91E00781C66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8055E8BE2A00F91E00781C66 /* Preview Assets.xcassets */; };
+		8055E8C82A00FB3000781C66 /* UISliderViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055E8C72A00FB3000781C66 /* UISliderViewRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8055E8B92A00F91900781C66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8055E8BB2A00F91E00781C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8055E8BE2A00F91E00781C66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8055E8C72A00FB3000781C66 /* UISliderViewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8055E8B72A00F91900781C66 /* ScoreSliderApp.swift */,
 				8055E8B92A00F91900781C66 /* ContentView.swift */,
+				8055E8C72A00FB3000781C66 /* UISliderViewRepresentation.swift */,
 				8055E8BB2A00F91E00781C66 /* Assets.xcassets */,
 				8055E8BD2A00F91E00781C66 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				8055E8BA2A00F91900781C66 /* ContentView.swift in Sources */,
 				8055E8B82A00F91900781C66 /* ScoreSliderApp.swift in Sources */,
+				8055E8C82A00FB3000781C66 /* UISliderViewRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
